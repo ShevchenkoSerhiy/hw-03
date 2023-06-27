@@ -1,0 +1,244 @@
+:root {
+  /* Colors */
+  --main-text-color: #434455;
+  --main-title-color: #2e2f42;
+  --main-light-bg: #ffffff;
+  --main-dark-bg: #2e2f42;
+  --main-btn-cl: #4d5ae5;
+  --main-btn-bg: #f4f4fd;
+}
+/**
+  |============================
+  | Common styles
+  |============================
+*/
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--main-text-color);
+  background-color: var(--main-light-bg);
+}
+/* Reset */
+.link,
+a {
+  text-decoration: none;
+  color: currentColor;
+}
+.list,
+ul,
+ol {
+  list-style: none;
+}
+.btn,
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+/**
+  |============================
+  | Base styles
+  |============================
+*/
+.title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-align: center;
+  text-transform: capitalize;
+  color: var(--main-title-color);
+}
+.subtitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--main-title-color);
+}
+
+/**
+  |============================
+  | Header styles
+  |============================
+*/
+.header {
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  text-transform: uppercase;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  color: #4d5ae5;
+}
+.logo-dark-title {
+  color: var(--main-title-color);
+}
+.header-nav {
+}
+.header-list {
+}
+.header-item {
+}
+.header-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-title-color);
+}
+.header-link:hover,
+.header-link:focus {
+  color: #404bbf;
+}
+.header-link:active {
+  color: #4d5ae5;
+}
+.header-address {
+  font-style: normal;
+}
+
+.header-address-list {
+}
+.header-address-item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+
+.header-address-link:hover,
+.header-address-link:focus {
+  color: #404bbf;
+}
+.header-address-link:active {
+  color: #4d5ae5;
+}
+.header-address-link {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+/**
+  |============================
+  | Main styles webstudio page
+  |============================
+*/
+.main {
+}
+.section {
+}
+/* Hero-section */
+.hero {
+  background: var(--main-dark-bg);
+}
+.hero-title {
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #ffffff;
+}
+.hero-button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  background: #4d5ae5;
+  color: #ffffff;
+}
+.hero-button:hover,
+.hero-button:focus {
+  background-color: #404bbf;
+}
+/* About-Us-section */
+
+.about-us {
+}
+.about-us-list {
+}
+.about-us-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+/* Projects-section */
+
+.projects {
+}
+.projects-list {
+}
+/* Our-team-section */
+.our-team {
+  background-color: #f4f4fd;
+}
+.our-team-list {
+}
+.our-team-item {
+  background-color: #ffffff;
+}
+.our-team-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+/**
+   |============================
+   | Main styles portfolio page
+   |============================
+ */
+.portfolio {
+}
+.portfolio-nav {
+}
+.portfolio-nav-item {
+}
+.portfolio-nav-button {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  color: var(--main-btn-cl);
+  background-color: var(--main-btn-bg);
+}
+.portfolio-nav-button:hover,
+.portfolio-nav-button:focus {
+  color: #ffffff;
+  background-color: #404bbf;
+}
+.portfolio-list {
+}
+.portfolio-item {
+}
+.portfolio-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--main-text-color);
+}
+
+/**
+  |============================
+  | Footer styles
+  |============================
+*/
+.footer {
+  background-color: var(--main-dark-bg);
+}
+.logo-ligth-title {
+  color: #f4f4fd;
+}
+.footer-text {
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #f4f4fd;
+}
