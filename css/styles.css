@@ -7,6 +7,11 @@
   --main-dark-bg: #2e2f42;
   --main-btn-cl: #4d5ae5;
   --main-btn-bg: #f4f4fd;
+  --cornflower: #e7e9fc;
+
+  --items: 4;
+  --indent-vertical: 24px;
+  --indent-horizontal: var(--indent-vertical);
 }
 /**
   |============================
@@ -19,7 +24,6 @@ body {
   color: var(--main-text-color);
   background-color: var(--main-light-bg);
 }
-
 /* Reset */
 h1,
 h2,
@@ -32,6 +36,7 @@ p {
 }
 .link,
 a {
+  display: block;
   text-decoration: none;
   color: currentColor;
 }
@@ -55,6 +60,17 @@ button {
 .main {
 }
 .section {
+}
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: var(--indent-vertical);
+  column-gap: var(--indent-horizontal);
+}
+.card-set-items {
+  flex-basis: calc(
+    (100%-var(--indent-vertical) * (var(--items)-1)) / var(--items)
+  );
 }
 
 .container {
@@ -186,7 +202,7 @@ button {
   font-weight: 700;
   font-size: 56px;
   line-height: 1.07;
-  letter-spacing: 0.02em;
+  letter-spacing: 1.12px;
   text-align: center;
   color: #ffffff;
   margin: 0 auto 48px;
@@ -253,6 +269,13 @@ button {
 .our-team-item {
   background-color: #ffffff;
 }
+.our-team-text-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 32px 0;
+}
 .our-team-text {
   font-size: 16px;
   line-height: 1.5;
@@ -265,12 +288,20 @@ button {
    |============================
  */
 .portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
 }
 .portfolio-nav {
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 72px;
 }
 .portfolio-nav-item {
 }
 .portfolio-nav-button {
+  min-width: 116px;
+  min-height: 48;
+  padding: 12px 24px;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -286,8 +317,24 @@ button {
   background-color: var(--main-hover-cl);
 }
 .portfolio-list {
+  --items: 3;
+  --indent-horizontal: 24px;
+  --indent-vertical: 48px;
 }
 .portfolio-item {
+}
+.portfolio-link {
+}
+.portfolio-text-container {
+  display: flex;
+  padding: 32px 16px;
+  flex-direction: column;
+  align-items: left;
+  flex-shrink: 0;
+  border: 1px solid var(--cornflower, #e7e9fc);
+  border-top: none;
+}
+.portfolio-subtitle {
 }
 .portfolio-text {
   font-size: 16px;
@@ -302,7 +349,7 @@ button {
   |============================
 */
 .footer {
-  padding-top: 101.5px;
+  padding-top: 100px;
   padding-bottom: 100px;
   background-color: var(--main-dark-bg);
 }
@@ -310,8 +357,10 @@ button {
   color: #f4f4fd;
 }
 .footer-text {
+  width: 264px;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #f4f4fd;
+  margin-top: 17.5px;
 }
