@@ -126,6 +126,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 24px 0;
 }
 .logo {
   margin-right: 76px;
@@ -149,7 +150,6 @@ img {
   display: flex;
   align-items: center;
   gap: 40px;
-  padding: 24px 0;
 }
 .header-item {
 }
@@ -357,7 +357,7 @@ img {
   --indent-vertical: 48px;
 }
 .portfolio-item {
-  width: calc((100% - 48px) / 3);
+  flex-basis: calc((100% - 24px * 2) / 3);
 }
 
 .portfolio-link {
