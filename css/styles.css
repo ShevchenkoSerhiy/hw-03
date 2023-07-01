@@ -141,12 +141,12 @@ img {
 .header-nav {
   display: flex;
   align-items: center;
-  padding: 24px 0;
 }
 .header-list {
   display: flex;
   align-items: center;
   gap: 40px;
+  padding: 24px 0;
 }
 .header-item {
 }
@@ -280,15 +280,17 @@ img {
   padding: 120px 0;
   background-color: #f4f4fd;
 }
+.our-team-title {
+  margin-bottom: 72px;
+}
 .our-team-list {
-  margin-top: 72px;
   display: flex;
   align-items: center;
   gap: 24px;
 }
 .our-team-item {
   flex-basis: calc((100% - 3 * 24px) / 4);
-  border-end-end-radius: 0px 0px 4px 4px;
+  border-radius: 0px 0px 4px 4px;
   background-color: #ffffff;
 }
 .our-team-text-container {
