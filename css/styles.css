@@ -36,6 +36,7 @@ p {
 }
 .link,
 a {
+  display: block;
   text-decoration: none;
   color: currentColor;
 }
@@ -126,7 +127,6 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 24px 0;
 }
 .logo {
   margin-right: 76px;
@@ -159,6 +159,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--main-title-color);
+  padding: 24px 0;
 }
 .header-link:hover,
 .header-link:focus {
